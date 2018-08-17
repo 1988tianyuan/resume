@@ -141,7 +141,7 @@
             <ul class="experience-list">
                 <li>
                     <h3 contenteditable="true">成都一汽发动机厂供应链管理系统－2017</h3>
-                    <p contenteditable="true">参与发动机厂供应链管理系统的开发及维护：<br>- 项目模块：供应商管理模块，整机订单管理模块，零配件订单管理模块，零配件信息模块，用户管理模块，物流信息管理模块<br>- 项目技术栈：spring3, hibernate, Oracle, jsp, linux Centos6.5, Jquery<br>- 个人工作：前期需求分析和表结构设计，独立负责整机订单和零配件订单模块的开发（后端增删改查，整机订单拆分运算生成零件订单功能模块，前端页面构建），项目上线后进行运行维护<br></p>
+                    <p contenteditable="true">参与发动机厂供应链管理系统的开发及维护：<br>- 项目模块：供应商管理模块，整机订单管理模块，零配件订单管理模块，零配件信息模块，用户管理模块，物流信息管理模块<br>- 项目技术栈：spring3, hibernate, Oracle, jsp, linux Centos6.5, Jquery<br>- 项目功能点（一部分）：<br>&nbsp;&nbsp;&nbsp; 1. 使用spring拦截器实现登录验证，对特定的url请求实现登陆跳转<br>&nbsp;&nbsp;&nbsp; 2. 使用HttpSession，通过保存一个全局的user对象实现登录状态的保存<br>&nbsp;&nbsp;&nbsp; 3. 针对自己负责的订单模块，整机订单生成零配件订单的计算逻辑比较复杂，自己造了一个轮子解决了这个问题<br></p>
                     <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
 
             </ul>
@@ -153,7 +153,7 @@
                 <li>
                     <h3 >基于SSM架构的仿天猫电商项目</h3>
                     <p contenteditable="true">- 项目简介：仿天猫网站，具备完整的购物、结算、物流跟踪等功能及后台管理功能，用于自身加深对SSM架构项目的理解，使自己具备企业级电商项目开发的能力<br>- 项目技术栈：spring3, springMVC, mybatis, mysql 5.7, JQuery, bootstrap, maven,
-                        tomcat7, 阿里云linux centos 7<br>
+                        tomcat7, 阿里云linux centos 7<br>- 项目功能点：<br>&nbsp;&nbsp;&nbsp; 1. 使用Page对象和mybatis的PageHelper插件实现分页查询<br>&nbsp;&nbsp;&nbsp; 2. 在产品分类展示页面中，实现5种商品排序策略，通过配置不同的Comparator对象 并结合jdk自带排序，实现根据产品的销量、价格等信息进行排序展示<br>&nbsp;&nbsp;&nbsp; 3. 表现层方面，使用jsp作为模板引擎，使用EL表达式进行数据渲染，jsp文件中不包含任何java代码<br>&nbsp;&nbsp;&nbsp; 4. 使用了bootstrap的轮播控件进行首页商品轮播展示，其他地方都没用到bootstrap<br>&nbsp;&nbsp;&nbsp; 5. 前端页面交互使用JQuery+Ajax实现，做得比较好的是购物车页面改变购买数量时实现的前后端联动和页面动态更新<br>&nbsp;&nbsp;&nbsp; 6. 表结构设计方面，针对各种产品属性种类相差较大的情况，进行了独特设计<br>
                     </p>
                     - 项目源码（包含详细文档）：<a href="https://github.com/1988tianyuan/tmalldemo">地址</a><br>- 项目已发布在阿里云linux服务器：<a href="http://47.104.176.49:8080/tmalldemo/">地址</a><br>
                     <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
@@ -161,7 +161,8 @@
                 <li>
                     <h3 contenteditable="true">基于Springboot框架的仿知乎项目<br></h3>
                     <p contenteditable="true">- 项目简介：简化版问答类网站，具备发布问题、回答、站内信、站内全文搜索、点赞点踩、关注、目标推送等功能，对多种web后端组件进行了实践运用<br>- 项目技术栈：springboot2.0, mybatis, mysql5.7, freemarker, redis, solr7.4, JQuery, bootstrap,
-                        maven, 阿里云linux centos 7<br></p>
+                        maven, 阿里云linux centos 7<br>- 项目功能点：<br>&nbsp;&nbsp;&nbsp; 1. 使用cookie保存token进行登录验证，将token保存到数据库并设置过期时间，这种方式比cookie+sessionid的方式更加灵活<br>&nbsp;&nbsp;&nbsp; 2. 设置全局对象Hostholder，该对象使用Threadlocal保存用户信息，通过拦截器验证访问是否包含有效token并将用户信息填充到Hostholder中供每个Controller使用<br>&nbsp;&nbsp;&nbsp; 3. 使用redis保存用户点赞点踩信息、用户互关信息和关注问题信息，并使用redis的阻塞队列实现了一套异步消息队列API，基于事件进行异步信息传递，不同的事件（回答问题、关注用户、登录异常等）有不同的Consumer进行处理，实现了功能解耦和易扩展性<br>&nbsp;&nbsp;&nbsp; 4. 使用solr实现了站内全文搜索，并自己编译实现了IKAnalyzer分词器API，通过加入词库等方式实现了有效的中文分词<br>&nbsp;&nbsp;&nbsp; 5. 使用Trie树实现了敏感词分类和文本过滤<br>&nbsp;&nbsp;&nbsp; 6. 使用jdk mail API和freemarker实现了邮件通知功能<br>&nbsp;&nbsp;&nbsp; 7. 多个模块使用了spring的InitializingBean接口对组件进行初始化操作<br>
+                    </p>
                     - 项目源码（包含详细文档）：<a href="https://github.com/1988tianyuan/zhihudemo">地址</a><br>- 项目已发布在阿里云linux服务器：<a href="http://47.104.176.49/zhihudemo/">地址</a>
                     <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                 </li>
