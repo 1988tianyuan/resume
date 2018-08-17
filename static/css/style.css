@@ -239,15 +239,20 @@ progress::-moz-progress-value {
 
 .info-header .unit-remove {
     float: right;
-    margin-left: 20px;
+    margin-left: 0px;
     visibility: hidden;
     cursor: pointer;
-
 }
+
+.info-header-description {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
 
 .info-header .item-add {
     float: right;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 2px;
     visibility: hidden;
     cursor: pointer;
@@ -287,4 +292,6 @@ ul li{
     
 }
 
-
+ .aboutme li{
+    margin-bottom: 5px;
+ }
