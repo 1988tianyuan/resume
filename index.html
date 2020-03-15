@@ -7,201 +7,168 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
     <script src="static/js/script.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
 </head>
 
 <body style="padding-right: 0px;">
+
+
 <div class="container" id="cv">
     <div class="side">
         <div class="me">
             <div class="portrait"></div>
             <h1 id="username" contenteditable="true">刘耕<br></h1>
-            <h4 id="persona-tag" contenteditable="true">求职意向：<br>Java后端开发 / Java web全栈开发<br></h4>
+            <h4 id="persona-tag" contenteditable="true">求职意向：Java开发 - web后端，大数据<br></h4>
         </div>
         <div class="profile info-unit">
             <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title" contenteditable="true">基本信息</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                 <hr>
                 <ul class="info-list">
                     <li>
-                        <label class="left-label" contenteditable="true">姓名</label><span class="label-value" contenteditable="true">刘耕</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label" contenteditable="true">姓名</label><span class="label-value" contenteditable="true">刘耕</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">学历</label><span class="label-value" contenteditable="true">硕士研究生</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label" contenteditable="true">学历</label><span class="label-value" contenteditable="true">硕士研究生</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">毕业院校</label><span class="label-value" contenteditable="true">重庆大学</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label" contenteditable="true">毕业院校</label><span class="label-value" contenteditable="true">重庆大学</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">毕业年份</label><span class="label-value" contenteditable="true">2014</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label" contenteditable="true">毕业年份</label><span class="label-value" contenteditable="true">2014</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">相关工作经验</label><span class="label-value" contenteditable="true">1年</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li></ul>
-                <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+                        <label class="left-label" contenteditable="true">工作经验</label><span class="label-value" contenteditable="true">6年</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li></ul>
+                <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="unit-remove"><i class="iconfont icon-delete"></i></span></h2>
         </div>
         <div class="contact info-unit">
             <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title" contenteditable="true">联系方式</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                 <hr>
                 <ul class="info-list">
                     <li>
-                        <label class="left-label" contenteditable="true">手机</label><span class="label-value" contenteditable="true">13693488729</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label" contenteditable="true">手机</label><span class="label-value" contenteditable="true">13693488729</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">邮箱</label><span class="label-value" contenteditable="true">1988tianyuan@gmail.com</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label" contenteditable="true">邮箱</label><span class="label-value" contenteditable="true">1988tianyuan@gmail.com</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label">简书</label><span><a href="http://www.jianshu.com/u/08dcd55c864e">地址</a></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label" contenteditable="true">技术博客</label><span><a href="https://www.mantian.site/blog/">地址</a></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">Github</label><span><a href="http://www.github.com/1988tianyuan">地址</a></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
+                        <label class="left-label" contenteditable="true">Github</label><span><a href="http://www.github.com/1988tianyuan">地址</a></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label" contenteditable="true">CSDN</label><span><a href="http://blog.csdn.net/qq_27961111">地址</a></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li></ul>
-                <span class="unit-remove"><i class="iconfont icon-delete"></i></span>
-            </h2>
+                        <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
+                        <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="unit-remove"><i class="iconfont icon-delete"></i></span></h2>
         </div>
         <div class="skill info-unit">
-            <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技术栈(1)</span></h2>
-            <span class="info-header-description">掌握（了解部分原理）</span>
+            <h2 class="info-header">
+                <i class="iconfont icon-star"></i>
+                <span class="info-title" contenteditable="true">技术栈</span>
+                <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
+                <span class="unit-remove"><i class="iconfont icon-delete"></i></span></h2>
+            <span class="info-header-description">掌握</span>
             <hr>
-            <ul class="progress-list">
-                <li>
-                    <label class="left-label">Java基础</label>
-                    <progress value="90" max="100"></progress>
-                </li>
-                <li>
-                    <label class="left-label">Spring</label>
-                    <progress value="80" max="100"></progress>
-                </li>
-                <li>
-                    <label class="left-label">Mysql</label>
-                    <progress value="80" max="100"></progress>
-                </li>
-                <li>
-                    <label class="left-label">redis</label>
-                    <progress value="75" max="100"></progress>
-                </li>
-                <li>
-                    <label class="left-label">tomcat</label>
-                    <progress value="75" max="100"></progress>
-                </li>
-            </ul>
+            <p contenteditable="true"><strong>Java后端开发</strong>：SpringBoot，SpringCloud，Dubbo, Mybatis，Hibernate</p>
+            <p contenteditable="true"><strong>大数据</strong>：Kafka，Flume，Nifi, Hadoop，Flink</p>
+            <p contenteditable="true"><strong>中间件</strong>：Netty，Zookeeper，Nginx</p>
+            <p contenteditable="true"><strong>搜索引擎</strong>：Solr，Elastic-Search</p>
+            <p contenteditable="true"><strong>数据库</strong>：Mysql，MongoDB，Redis</p>
+            <p contenteditable="true"><strong>CI/CD</strong>：Git, Maven，Jenkins, Docker, Kubernates</p>
+            <p contenteditable="true"><strong>自动化测试</strong>：Jmeter, Cucumber</p>
+            <p contenteditable="true"><strong>云和开放平台</strong>：阿里云, 微信小程序开发</p>
+            <p contenteditable="true"><strong>其他语言</strong>：Python，Golang</p>
         </div>
-
-        <div class="skill info-unit">
-            <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技术栈(2)</span></h2>
-            <span class="info-header-description">熟悉（项目中用过）</span>
-            <hr>
-            <ul class="progress-list">
-                <li>
-                    <label class="left-label">Python</label>
-                    <progress value="75" max="100"></progress>
-                </li>
-                <li>
-                    <label class="left-label">html/css</label>
-                    <progress value="80" max="100"></progress>
-                </li>
-                <li>
-                    <label class="left-label">Javascript</label>
-                    <progress value="80" max="100"></progress>
-                </li>
-                <li>
-                    <label class="left-label">Linux</label>
-                    <progress value="75" max="100"></progress>
-                </li>
-                <li>
-                    <label class="left-label">Solr</label>
-                    <progress value="80" max="100"></progress>
-                </li>
-                <li>
-                    <label class="left-label">Mybatis</label>
-                    <progress value="85" max="100"></progress>
-                </li>
-                <li>
-                    <label class="left-label">Springboot</label>
-                    <progress value="90" max="100"></progress>
-                </li>
-            </ul>
-        </div>
-
-        <div class="skill info-unit">
-            <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技术栈(3)</span></h2>
-            <span class="info-header-description">了解（经过短时间学习即可进行实际开发）</span>
-            <hr>
-            <P>Vue.js, Angular.js, springcloud, Nginx, Restful API, dubbo, Zookeeper, MongoDB</P>
-        </div>
-
-        <div class="aboutme info-unit right-paragraph">
-            <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title" contenteditable="true">自我评价</span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-            <hr>
-            <ul class="experience-list">
-                <li>
-                    <h4>学习能力</h4>
-                    <p>受益于读研三年搞科研的经历，自学能力和解决问题能力很强</p>
-                </li>
-                <li>
-                    <h4>对于技术</h4>
-                    <p>对新技术求知若渴，闲暇时间喜欢琢磨各种技术，沉迷于写代码</p>
-                </li>
-                <li>
-                    <h4>工作态度</h4>
-                    <p>稳重踏实，精力旺盛，以完成项目为头号准则</p>
-                </li>
-                <li>
-                    <h4>外语能力</h4>
-                    <p>在校已过CET6，英语读写能力强，阅读英语技术资料无障碍</p>
-                </li>
-            </ul>
-
-        </div>
-
 
     </div>
     <div class="main">
         <div class="education info-unit right-list">
-            <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title" contenteditable="true">教育经历</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove"><i class="iconfont icon-delete"></i></span></h2>
+            <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title" contenteditable="true">教育经历</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove"><i class="iconfont icon-delete"></i></span><span class="item-add"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove"><i class="iconfont icon-delete"></i></span></h2>
             <hr>
             <ul class="experience-list">
                 <li>
                     <h3 contenteditable="true">重庆大学 - 机械制造（本科）2007-2011</h3>
-                    <p contenteditable="true">专业排名前15%<br></p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span><span class="item-remove"><i class="iconfont icon-delete"></i></span></li>
                 <li>
                     <h3 contenteditable="true">重庆大学 - 机械制造及自动化（硕士）2011-2014</h3>
-                    <p contenteditable="true">国家自然基金：制造业设备节能优化算法的实现以及节能控制系统的研发（VB.net技术栈）和实施<br></p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li></ul>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li></ul>
         </div>
         <div class="work info-unit right-list">
-            <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title" contenteditable="true">工作经历</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+            <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title" contenteditable="true">工作经历</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove"><i class="iconfont icon-delete"></i></span></h2>
             <hr>
             <ul class="experience-list">
                 <li>
-                    <h3>一汽-大众 成都发动机厂 —— 2014.8 - 2017.2</h3>
-                    <p>供应链管理工程师</p>
+                    <h3 contenteditable="true">世联互动网络科技（韩国门户网站NAVER） —— 2018.9 - 至今</h3>
+                    <p contenteditable="true">Java工程师，兼任公有云Console项目后端小组副组长</p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                 </li>
                 <li>
-                    <h3>一汽-大众 成都IT系统开发与管理部 —— 2017.3至今</h3>
-                    <p>IT系统开发工程师</p>
+                    <h3 contenteditable="true">一汽-大众 IT系统开发与管理部 —— 2016.7 - 2018.8</h3>
+                    <p contenteditable="true">Java工程师</p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
+                </li>
+                <li>
+                    <h3 contenteditable="true">一汽-大众 发动机厂供应链管理部 —— 2014.9 - 2016.6<br></h3>
+                    <p contenteditable="true">供应链管理工程师</p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                 </li>
             </ul>
         </div>
         <div class="project info-unit right-list">
-            <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title" contenteditable="true">相关项目经验</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+            <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title" contenteditable="true">项目经验</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
             <hr>
             <ul class="experience-list">
                 <li>
-                    <h3 contenteditable="true">发动机厂供应链管理系统</h3>
-                    <p contenteditable="true">参与发动机厂供应链管理系统的开发及维护：<br>- 项目模块：供应商管理模块，整机订单管理模块，零配件订单管理模块，零配件信息模块，用户管理模块，物流信息管理模块<br>- 项目技术栈：spring3, hibernate, Oracle, jsp, linux Centos6.5, Jquery<br>- 项目功能点（一部分）：<br>&nbsp;&nbsp;&nbsp; 1. 使用spring拦截器实现登录验证，对特定的url请求实现登陆跳转<br>&nbsp;&nbsp;&nbsp; 2. 使用HttpSession，通过保存一个全局的user对象实现登录状态的保存<br>&nbsp;&nbsp;&nbsp; 3. 针对自己负责的订单模块，整机订单生成零配件订单的计算逻辑比较复杂，自己造了一个轮子解决了这个问题<br></p>
+                    <h3 contenteditable="true">Naver Cloud Platform Resource-Manager —— 2019.8至今<br></h3>
+                    <p contenteditable="true"><strong>项目简介</strong>：公有云产品数据信息中台，对产品资源状态数据进行集中式统一管理和分析
+                        <br><strong>技术栈</strong>：springboot, mybatis, mysql, mongodb, kafka, flume, flink, Okhttp, zookeeper, docker, k8s
+                        <br><strong>项目亮点</strong>：
+                        <br>&nbsp;&nbsp;&nbsp; 1. 为各产品针对性开发数据收集sdk，封装并优化OkHttp客⼾端，在保证数据采集端较吞吐量的前提下平衡资源消耗
+                        <br>&nbsp;&nbsp;&nbsp; 2. 基于业务需求对Apache Flume进行定制化改造，完成从数据收集-数据过滤和校验-数据输出到kafka，对Flume Source的embedded jetty服务器线程池配置进行调优，
+                        将集群tps从5000提高到8000，并通过定制化Flume Sink避免了偶尔产生的10s数据轮询延时
+                        <br>&nbsp;&nbsp;&nbsp; 3. 搭建kafka-consumer集群，采用zookeeper选举master consumer节点，负责kafka topic的rebalance，实现consumer动态缩/扩容以及消费负载均衡
+                        <br>&nbsp;&nbsp;&nbsp; 4. 开发基于zookeeper的zk-utils工具包，集成node选举，事件通知，分布式锁等功能，已在公司内部广泛采用
+                        <br>&nbsp;&nbsp;&nbsp; 5. 采用flink消费kafka产生的产品实时action数据，分析用户行为和产品使用情况
+                        <br>&nbsp;&nbsp;&nbsp; 6. kafka集群调优以及mongodb存储数据索引优化
+                        <br>&nbsp;&nbsp;&nbsp; 7. 项目采用docker容器的方式部署到公司的k8s集群，实现节点动态恢复和blue-green启动<br>
+                    </p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                     <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                 </li>
                 <li>
-                    <h3 >基于SSM架构的仿天猫电商项目</h3>
-                    <p contenteditable="true">- 项目简介：仿天猫网站，具备完整的购物、结算、物流跟踪等功能及后台管理功能，用于自身加深对SSM架构项目的理解，使自己具备企业级电商项目开发的能力<br>- 项目技术栈：spring3, springMVC, mybatis, mysql 5.7, JQuery, bootstrap, maven,
-                        tomcat7, 阿里云linux centos 7<br>- 项目功能点：<br>&nbsp;&nbsp;&nbsp; 1. 使用Page对象和mybatis的PageHelper插件实现分页查询<br>&nbsp;&nbsp;&nbsp; 2. 在产品分类展示页面中，实现5种商品排序策略，通过配置不同的Comparator对象 并结合jdk自带排序，实现根据产品的销量、价格等信息进行排序展示<br>&nbsp;&nbsp;&nbsp; 3. 表现层方面，使用jsp作为模板引擎，使用EL表达式进行数据渲染，jsp文件中不包含任何java代码<br>&nbsp;&nbsp;&nbsp; 4. 使用了bootstrap的轮播控件进行首页商品轮播展示，其他地方都没用到bootstrap<br>&nbsp;&nbsp;&nbsp; 5. 前端页面交互使用JQuery+Ajax实现，做得比较好的是购物车页面改变购买数量时实现的前后端联动和页面动态更新<br>&nbsp;&nbsp;&nbsp; 6. 表结构设计方面，针对各种产品属性种类相差较大的情况，进行了独特设计<br>
+                    <h3 contenteditable="true">Naver Cloud Live Station —— 2019.1 - 2019.7<br></h3>
+                    <p contenteditable="true"><strong>项目简介</strong>：公有云多媒体SaaS服务，用户可使用公司提供的RTMP协议直播流进行在线直播流管理，录制视频和多平台推流服务
+                        <br><strong>技术栈</strong>：springboot, mybatis, mysql, elasticseach, kafka, nginx, Hmily TCC distributetransaction, xxl-job distribute-job-schedule, flink, docker
+                        <br><strong>项目亮点</strong>：
+                        <br>&nbsp;&nbsp;&nbsp; 1. 搭建kafka集群收集用户直播流状态变更日志，日志用于多个用途，存入elasticsearch集群用于查阅和检索展展示，由flink消费kafka日志信息聚合用
+                        户实时推流数据用于计费和实时展示，以及通知record服务将用户录制的视频上传到公司的对象存储服务
+                        <br>&nbsp;&nbsp;&nbsp; 2. 集成开源的 Hmily TCC分布式事务框架，协调多个服务节点保证视频流创建，修改和删除过程的BASE最终一致性
+                        <br>&nbsp;&nbsp;&nbsp; 3. 集成开源的xxl-job distribute-job-scheduler，动态启动多个节点执行batch任务，包括汇总用户的daily usage信息，清理es过期日志数据，
+                        对录制失败的视频以及其他脏数据（例如TCC事务执行失败需要进行补偿的数据）进行补偿处理
+                        <br>&nbsp;&nbsp;&nbsp; 4. 项目采用docker容器的方式部署到公司的k8s集群，实现节点动态恢复和blue-green启动<br>
                     </p>
-                    - 项目源码（包含详细文档）：<a href="https://github.com/1988tianyuan/tmalldemo">地址</a><br>- 项目已发布在阿里云linux服务器：<a href="http://47.104.176.49:8080/tmalldemo/">地址</a><br>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                     <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                 </li>
                 <li>
-                    <h3 contenteditable="true">基于Springboot框架的仿知乎项目<br></h3>
-                    <p contenteditable="true">- 项目简介：简化版问答类网站，具备发布问题、回答、站内信、站内全文搜索、点赞点踩、关注、目标推送等功能，对多种web后端组件进行了实践运用<br>- 项目技术栈：springboot2.0, mybatis, mysql5.7, freemarker, redis, solr7.4, JQuery, bootstrap,
-                        maven, 阿里云linux centos 7<br>- 项目功能点：<br>&nbsp;&nbsp;&nbsp; 1. 使用cookie保存token进行登录验证，将token保存到数据库并设置过期时间，这种方式比cookie+sessionid的方式更加灵活<br>&nbsp;&nbsp;&nbsp; 2. 设置全局对象Hostholder，该对象使用Threadlocal保存用户信息，通过拦截器验证访问是否包含有效token并将用户信息填充到Hostholder中供每个Controller使用<br>&nbsp;&nbsp;&nbsp; 3. 使用redis保存用户点赞点踩信息、用户互关信息和关注问题信息，并使用redis的阻塞队列实现了一套异步消息队列API，基于事件进行异步信息传递，不同的事件（回答问题、关注用户、登录异常等）有不同的Consumer进行处理，实现了功能解耦和易扩展性<br>&nbsp;&nbsp;&nbsp; 4. 使用solr实现了站内全文搜索，并自己编译实现了IKAnalyzer分词器API，通过加入词库等方式实现了有效的中文分词<br>&nbsp;&nbsp;&nbsp; 5. 使用Trie树实现了敏感词分类和文本过滤<br>&nbsp;&nbsp;&nbsp; 6. 使用jdk mail API和freemarker实现了邮件通知功能<br>&nbsp;&nbsp;&nbsp; 7. 多个模块使用了spring的InitializingBean接口对组件进行初始化操作<br>
+                    <h3 contenteditable="true">Naver Cloud Platform Console —— 2018.9 - 2019.2<br></h3>
+                    <p contenteditable="true"><strong>项目简介</strong>：公有云产品统一交互控制台，用于公有云产品用户对各产品的统一操作和控制
+                        <br><strong>技术栈</strong>：springboot, springdata jpa, mysql, Nginx, zookeeper, redis, netty, springcloud-gateway
+                        <br><strong>项目亮点</strong>：
+                        <br>&nbsp;&nbsp;&nbsp; 1. 搭建redis集群作为数据读取的缓存层，缓存过期策略采取随机时间过期搭配修改时主动双删，保证缓存数据一致性
+                        <br>&nbsp;&nbsp;&nbsp; 2. 采用springcloud-gateway作为API网关，结合公司的统一鉴权中心，对接口访问进行统一权限管理以及用户
+                        过滤
+                        <br>&nbsp;&nbsp;&nbsp; 3. 参与开发公司内部用于与多个产品数据中心进行交互的RPC框架，使用netty作为网络组件，结合zookeeper实现服务注册和服务发现，使用protobuf协议实现公司内部数据交互
                     </p>
-                    - 项目源码（包含详细文档）：<a href="https://github.com/1988tianyuan/zhihudemo">地址</a><br>- 项目已发布在阿里云linux服务器：<a href="http://47.104.176.49/zhihudemo/">地址</a>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                     <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
                 </li>
-
-
+                <li>
+                    <h3 contenteditable="true">公司信息互动及QA平台 —— 2017.8 - 2018.3<br></h3>
+                    <p contenteditable="true"><strong>项目简介</strong>：服务于公司内部员工的问答平台，有公司客服专员在线解答员工疑难，具备发布问题、回答、站内信、站内全文搜索、点赞点踩、关注问题、目标推送等功能，我自己负责了大部分功能模块的实现，该平台已上线
+                        <br><strong>技术栈</strong>：springboot, mybatis, mysql, freemarker, redis, solr, JQuery, bootstrap,
+                        maven, linux centos 7
+                        <br><strong>项目亮点</strong>：
+                        <br>&nbsp;&nbsp;&nbsp; 1. 使用solr实现了站内全文搜索，并编译实现IKAnalyzer分词器API，通过加⼊词库等方式实现了有效的中文分词
+                        <br>&nbsp;&nbsp;&nbsp; 2. 使用Trie树实现了敏感词分类和文本过滤
+                        <br>&nbsp;&nbsp;&nbsp; 3. 使用redis sorted set数据结构存储回答列表，基于点赞数进行排序
+                        <br>&nbsp;&nbsp;&nbsp; 4. 使用redis pub/sub功能实现站内信推送和异常登录邮件推送
+                    </p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span>
+                </li>
             </ul>
         </div>
 
@@ -211,7 +178,12 @@
 
 
 
-<div class="remodal-overlay remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="portrait-modal" tabindex="-1">
+<div class="remodal-overlay remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div>
+
+<div class="remodal-wrapper remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div>
+<div class="remodal-wrapper remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"></div>
+
+<div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="portrait-modal" tabindex="-1">
     <h3 contenteditable="true">请输入图片URL地址：</h3>
     <br>
     <input id="avatar-url" type="text">
@@ -221,4 +193,6 @@
     <br>
     <input id="weixin-url" type="text">
     <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-</div></div></body></html>
+</div></div>
+</body>
+</html>
